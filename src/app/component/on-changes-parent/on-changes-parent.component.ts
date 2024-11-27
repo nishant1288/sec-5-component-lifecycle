@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./on-changes-parent.component.css']
 })
 export class OnChangesParentComponent {
-
+  parentInputValue : string = 'New Value';
 }
