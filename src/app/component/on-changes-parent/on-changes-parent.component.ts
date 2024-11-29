@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class OnChangesParentComponent {
   parentInputValue : string = 'New Value';
+
+  updateParentInputValue() {
+    this.parentInputValue = 'UPDATED BY CLICKING BUTTON'
+  }
 }
