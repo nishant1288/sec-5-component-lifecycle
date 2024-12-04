@@ -9,10 +9,10 @@ export class AppComponent implements OnInit{
   title = 'sec-5-component-lifecycle';
 
   constructor() {
-    console.log('Constructor is called')
+    // console.log('Constructor is called')
   }
 
   ngOnInit() {
-    console.log('ngOnInit is called')
+    // console.log('ngOnInit is called')
   }
 }
