@@ -1,0 +1,4 @@
+<h1>On Destroy Parent</h1>
+
+<button (click)="toggleDisplay()" >{{ isDisplay ? 'Hide' : 'Show' }}</button>
+<app-on-destroy-child *ngIf="isDisplay" ></app-on-destroy-child>

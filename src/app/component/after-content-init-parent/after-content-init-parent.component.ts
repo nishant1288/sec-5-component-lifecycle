@@ -1,11 +1,11 @@
-import { AfterContentInit, Component } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, Component, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-after-content-init-parent',
   templateUrl: './after-content-init-parent.component.html',
   styleUrls: ['./after-content-init-parent.component.css']
 })
-export class AfterContentInitParentComponent implements AfterContentInit {
+export class AfterContentInitParentComponent implements DoCheck {
 
   parentData = '';
 
@@ -14,8 +14,14 @@ export class AfterContentInitParentComponent implements AfterContentInit {
     this.parentData = `Random number from parent : ${random}`;
   }
 
-  ngAfterContentInit(): void {
-    console.log('After content init called');
+  // ngAfterContentInit(): void {
+  //   console.log('After content init called');
+  // }
+  ngDoCheck(): void {
+    console.log('Do check from parent is called')
+  }
+  ngAfterContentChecked(): void {
+    console.log('After content checked called');
   }
 
 }

@@ -10,6 +10,8 @@ import { DoCheckParentComponent } from './component/do-check-parent/do-check-par
 import { DoCheckChildComponent } from './component/do-check-child/do-check-child.component';
 import { AfterContentInitParentComponent } from './component/after-content-init-parent/after-content-init-parent.component';
 import { AfterContentInitChildComponent } from './component/after-content-init-child/after-content-init-child.component';
+import { OnDestroyParentComponent } from './component/on-destroy-parent/on-destroy-parent.component';
+import { OnDestroyChildComponent } from './component/on-destroy-child/on-destroy-child.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AfterContentInitChildComponent } from './component/after-content-init-c
     DoCheckParentComponent,
     DoCheckChildComponent,
     AfterContentInitParentComponent,
-    AfterContentInitChildComponent
+    AfterContentInitChildComponent,
+    OnDestroyParentComponent,
+    OnDestroyChildComponent
   ],
   imports: [
     BrowserModule,
